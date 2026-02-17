@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Army Operations</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/dashboard.css">
+
+    <style>
+        .ops-container {
+            margin-top: 140px;
+            padding-bottom: 60px;
+            color: white;
+            text-align: center;
+        }
+         
+        /* CHANGE BACKGROUND IMAGE FOR ARMY PAGE */
+.bg-home {
+    background: url("/static/images/army7.jpg") no-repeat center/cover;
+    filter: blur(10px);
+    transform: scale(1.1);
+}
+
+        .ops-title {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .ops-sub {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 60px;
+        }
+
+        .ops-list {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        .op-card {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            background: rgba(0,0,0,0.65);
+            padding: 32px;
+            border-radius: 18px;
+            box-shadow: 0 0 30px rgba(46,204,113,0.4);
+        }
+
+        .op-text {
+            flex: 2;
+            text-align: left;
+        }
+
+        .op-name {
+            font-size: 24px;
+            font-weight: 600;
+            color: #2ecc71;
+        }
+
+        .op-year {
+            font-size: 14px;
+            opacity: 0.8;
+            margin: 6px 0 14px;
+        }
+
+        .op-desc {
+            font-size: 16px;
+            line-height: 1.75;
+        }
+
+        .op-image {
+            flex: 1;
+        }
+
+        .op-image img {
+            width: 100%;
+            border-radius: 14px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.7);
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 70px;
+            padding: 14px 36px;
+            background: #2ecc71;
+            color: black;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-btn:hover {
+            background: #27ae60;
+        }
+@media (max-width: 768px) {
+    .bg-home {
+        filter: blur(3px);
+    }
+}
+
+
+        @media (max-width: 900px) {
+            .op-card {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="bg-home"></div>
+
+<div class="navbar">
+    <div class="nav-left">
+        <span class="title">Army Operations</span>
+    </div>
+    <a href="/home" class="logout">Back</a>
+</div>
+
+<div class="ops-container">
+    <div class="ops-title">ARMY OPERATIONS</div>
+    <div class="ops-sub">Major Indian Army operations since Independence</div>
+
+    <div class="ops-list">
+
+        <div class="op-card">
+            <div class="op-text">
+                <div class="op-name">Operation Polo</div>
+                <div class="op-year">1948</div>
+                <div class="op-desc">
+                    Operation Polo was launched to integrate the princely state of Hyderabad
+                    into the Indian Union. The Nizam’s refusal to accede created instability.
+                    The Indian Army conducted a swift five-day operation.
+                    It prevented prolonged conflict and restored order.
+                    Hyderabad officially joined India on 17 September 1948.
+                </div>
+            </div>
+            <div class="op-image">
+                <img src="/static/images/army1.jpg" alt="Operation Polo">
+            </div>
+        </div>
+
+        <div class="op-card">
+            <div class="op-text">
+                <div class="op-name">Indo-Pak War (Jammu & Kashmir)</div>
+                <div class="op-year">1947 – 1948</div>
+                <div class="op-desc">
+                    The first war between India and Pakistan erupted over Jammu and Kashmir.
+                    Tribal militias supported by Pakistan invaded the region.
+                    Indian troops were airlifted to Srinagar in a historic mission.
+                    Fierce battles were fought in mountainous terrain.
+                    The conflict resulted in the Line of Control.
+                </div>
+            </div>
+            <div class="op-image">
+                <img src="/static/images/army2.jpg" alt="Indo Pak War 1947">
+            </div>
+        </div>
+
+        <div class="op-card">
+            <div class="op-text">
+                <div class="op-name">Indo-China War</div>
+                <div class="op-year">1962</div>
+                <div class="op-desc">
+                    The war was fought along the Himalayan borders with China.
+                    Indian soldiers faced extreme cold and difficult terrain.
+                    Though setbacks occurred, the war exposed critical weaknesses.
+                    It led to major military reforms and modernization.
+                    The lessons of 1962 still influence Indian defense planning.
+                </div>
+            </div>
+            <div class="op-image">
+                <img src="/static/images/army3.jpg" alt="Indo China War">
+            </div>
+        </div>
+
+        <div class="op-card">
+            <div class="op-text">
+                <div class="op-name">Indo-Pak War & Liberation of Bangladesh</div>
+                <div class="op-year">1971</div>
+                <div class="op-desc">
+                    The 1971 war was a decisive victory for India.
+                    Indian forces coordinated with Mukti Bahini fighters.
+                    Rapid advances led to the surrender of over 90,000 enemy troops.
+                    Bangladesh emerged as an independent nation.
+                    This war showcased India’s strategic excellence.
+                </div>
+            </div>
+            <div class="op-image">
+                <img src="/static/images/army4.jpg" alt="1971 War">
+            </div>
+        </div>
+
+        <div class="op-card">
+            <div class="op-text">
+                <div class="op-name">Kargil War (Operation Vijay)</div>
+                <div class="op-year">1999</div>
+                <div class="op-desc">
+                    The Kargil conflict involved high-altitude warfare.
+                    Enemy forces occupied strategic mountain peaks.
+                    Indian soldiers carried out daring uphill assaults.
+                    Territory was reclaimed without crossing the LoC.
+                    Kargil symbolizes bravery and sacrifice.
+                    India launched Operation Vijay to recapture these strategic
+                    high-altitude peaks, resulting in fierce battles 
+	with significant casualties
+                </div>
+            </div>
+            <div class="op-image">
+                <img src="/static/images/army5.jpg" alt="Kargil War">
+            </div>
+        </div>
+
+        <div class="op-card">
+            <div class="op-text">
+                <div class="op-name">Surgical Strikes</div>
+                <div class="op-year">2016</div>
+                <div class="op-desc">
+                    Surgical strikes targeted terrorist launch pads across the border.
+                    They followed attacks on Indian military bases.
+                    Special Forces executed precise, intelligence-based missions.
+                    The operation marked a strategic policy shift.
+                    It demonstrated India’s operational capability.
+                </div>
+            </div>
+            <div class="op-image">
+                <img src="/static/images/army6.jpg" alt="Surgical Strikes">
+            </div>
+        </div>
+
+    </div>
+
+    <a href="/home" class="back-btn">← Back to Home</a>
+</div>
+
+</body>
+</html>

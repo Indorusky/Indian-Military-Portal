@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking OTP</title>
+
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="/static/style.css">
+
+    <style>
+        .otp-title {
+            font-size: 22px;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .otp-sub {
+            font-size: 14px;
+            opacity: 0.85;
+            margin-bottom: 22px;
+        }
+
+        .otp-input {
+            letter-spacing: 10px;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<!-- BLUR BACKGROUND -->
+<div class="bg-blur"></div>
+
+<!-- CENTER -->
+<div class="center-wrapper">
+    <div class="login-card">
+
+        <div class="otp-title">🔐 Verify Booking OTP</div>
+        <div class="otp-sub">
+            Enter the 6-digit OTP sent to your email
+        </div>
+
+        <form method="POST">
+            <input
+                type="text"
+                name="otp"
+                class="otp-input"
+                placeholder="• • • • • •"
+                maxlength="6"
+                pattern="[0-9]{6}"
+                required
+            >
+
+            <button type="submit">Confirm Booking</button>
+        </form>
+
+        <div class="link">
+            <a href="/home">Cancel & Go Home</a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

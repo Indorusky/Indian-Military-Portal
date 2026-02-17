@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Naval Operations</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/dashboard.css">
+
+    <style>
+        .ops-container {
+            margin-top: 140px;
+            padding-bottom: 60px;
+            color: white;
+            text-align: center;
+        }
+
+        .ops-title {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .ops-sub {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 60px;
+        }
+
+        .ops-list {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        .op-card {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            background: rgba(0,0,0,0.65);
+            padding: 32px;
+            border-radius: 18px;
+            box-shadow: 0 0 30px rgba(52,152,219,0.45);
+        }
+
+        .op-text {
+            flex: 2;
+            text-align: left;
+        }
+
+        .op-name {
+            font-size: 24px;
+            font-weight: 600;
+            color: #4da6ff;
+        }
+
+        .op-year {
+            font-size: 14px;
+            opacity: 0.8;
+            margin: 6px 0 14px;
+        }
+
+        .op-desc {
+            font-size: 16px;
+            line-height: 1.75;
+        }
+
+        .op-image {
+            flex: 1;
+        }
+
+        .op-image img {
+            width: 100%;
+            border-radius: 14px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.7);
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 70px;
+            padding: 14px 36px;
+            background: #4da6ff;
+            color: black;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-btn:hover {
+            background: #2d89e5;
+        }
+@media (max-width: 768px) {
+    .bg-home {
+        filter: blur(3px);
+    }
+}
+
+
+        @media (max-width: 900px) {
+            .op-card {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="bg-home"></div>
+
+<div class="navbar">
+    <div class="nav-left">
+        <span class="title">Naval Operations</span>
+    </div>
+    <a href="/home" class="logout">Back</a>
+</div>
+
+<div class="ops-container">
+    <div class="ops-title">NAVAL OPERATIONS</div>
+    <div class="ops-sub">Major Indian Navy operations since Independence</div>
+
+    <div class="ops-list">
+
+        <div class="op-card">
+            <div class="op-text">
+                <div class="op-name">Operation Trident</div>
+                <div class="op-year">1971</div>
+                <div class="op-desc">
+                    Operation Trident was a decisive naval strike during the Indo-Pak War of 1971.
+                    Indian Navy missile boats attacked Karachi harbor.
+                    Several enemy vessels and fuel depots were destroyed.
+                    The operation severely crippled Pakistan’s naval capability.
+                    It marked the first successful use of anti-ship missiles in the region.
+                </div>
+            </div>
+            <div class="op-image">
+                <img src="/static/images/navy1.jpg" alt="Operation Trident">
+            </div>
+        </div>
+
+        <div class="op-card">
+            <div class="op-text">
+                <div class="op-name">Operation Python</div>
+                <div class="op-year">1971</div>
+                <div class="op-desc">
+                    Operation Python was a follow-up strike on Karachi harbor.
+                    It was conducted by a smaller naval task force.
+                    The attack further damaged enemy ships and oil installations.
+                    It intensified the naval blockade of Pakistan.
+                    The operation ensured Indian naval dominance in the Arabian Sea.
+                </div>
+            </div>
+            <div class="op-image">
+                <img src="/static/images/navy2.jpg" alt="Operation Python">
+            </div>
+        </div>
+
+        <div class="op-card">
+            <div class="op-text">
+                <div class="op-name">Operation Talwar</div>
+                <div class="op-year">1999</div>
+                <div class="op-desc">
+                    Operation Talwar was part of India’s naval response during the Kargil conflict.
+                    The Indian Navy deployed warships to the Arabian Sea.
+                    Pakistan’s sea lines of communication were effectively threatened.
+                    This operation pressured Pakistan economically and strategically.
+                    Naval readiness played a key role in conflict escalation control.
+                </div>
+            </div>
+            <div class="op-image">
+                <img src="/static/images/navy3.jpg" alt="Operation Talwar">
+            </div>
+        </div>
+
+        <div class="op-card">
+            <div class="op-text">
+                <div class="op-name">Operation Cactus</div>
+                <div class="op-year">1988</div>
+                <div class="op-desc">
+                    Operation Cactus was a rapid military intervention in the Maldives.
+                    Indian Navy supported the airlift of troops.
+                    The operation neutralized a coup attempt.
+                    It demonstrated India’s ability to project power in the Indian Ocean.
+                    The mission strengthened regional security cooperation.
+                </div>
+            </div>
+            <div class="op-image">
+                <img src="/static/images/navy4.jpg" alt="Operation Cactus">
+            </div>
+        </div>
+
+        <div class="op-card">
+            <div class="op-text">
+                <div class="op-name">Operation Raahat (Naval Role)</div>
+                <div class="op-year">2015</div>
+                <div class="op-desc">
+                    Operation Raahat was a humanitarian evacuation mission from Yemen.
+                    Indian Navy ships rescued thousands of Indian and foreign nationals.
+                    Naval vessels provided medical aid and shelter.
+                    The operation showcased India’s humanitarian capability.
+                    It enhanced the Navy’s global reputation.
+                </div>
+            </div>
+            <div class="op-image">
+                <img src="/static/images/navy5.jpg" alt="Operation Raahat">
+            </div>
+        </div>
+
+        <div class="op-card">
+            <div class="op-text">
+                <div class="op-name">Anti-Piracy Operations</div>
+                <div class="op-year">2008 – Present</div>
+                <div class="op-desc">
+                    Indian Navy has conducted continuous anti-piracy patrols in the Gulf of Aden.
+                    Numerous merchant ships have been escorted safely.
+                    Piracy threats have been neutralized through active engagement.
+                    These missions ensure maritime trade security.
+                    India remains a key contributor to global maritime safety.
+                </div>
+            </div>
+            <div class="op-image">
+                <img src="/static/images/navy6.jpg" alt="Anti Piracy Operations">
+            </div>
+        </div>
+
+    </div>
+
+    <a href="/home" class="back-btn">← Back to Home</a>
+</div>
+
+</body>
+</html>

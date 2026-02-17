@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Air Force Operations</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/dashboard.css">
+
+    <style>
+        .ops-container {
+            margin-top: 140px;
+            padding-bottom: 60px;
+            color: white;
+            text-align: center;
+        }
+/* CHANGE BACKGROUND IMAGE FOR AIR FORCE PAGE */
+.bg-home {
+    background: url("/static/images/air7.jpg") no-repeat center/cover;
+    filter: blur(10px);
+    transform: scale(1.1);
+}
+
+        .ops-title {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .ops-sub {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 60px;
+        }
+
+        .ops-list {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        .op-card {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            background: rgba(0,0,0,0.65);
+            padding: 32px;
+            border-radius: 18px;
+            box-shadow: 0 0 30px rgba(155,89,182,0.45);
+        }
+
+        .op-text {
+            flex: 2;
+            text-align: left;
+        }
+
+        .op-name {
+            font-size: 24px;
+            font-weight: 600;
+            color: #cfa9ff;
+        }
+
+        .op-year {
+            font-size: 14px;
+            opacity: 0.8;
+            margin: 6px 0 14px;
+        }
+
+        .op-desc {
+            font-size: 16px;
+            line-height: 1.75;
+        }
+
+        .op-image {
+            flex: 1;
+        }
+
+        .op-image img {
+            width: 100%;
+            border-radius: 14px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.7);
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 70px;
+            padding: 14px 36px;
+            background: #cfa9ff;
+            color: black;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-btn:hover {
+            background: #b892f5;
+        }
+@media (max-width: 768px) {
+    .bg-home {
+        filter: blur(3px);
+    }
+}
+
+        @media (max-width: 900px) {
+            .op-card {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="bg-home"></div>
+
+<div class="navbar">
+    <div class="nav-left">
+        <span class="title">Air Force Operations</span>
+    </div>
+    <a href="/home" class="logout">Back</a>
+</div>
+
+<div class="ops-container">
+    <div class="ops-title">AIR FORCE OPERATIONS</div>
+    <div class="ops-sub">Major Indian Air Force operations since Independence</div>
+
+    <div class="ops-list">
+
+        <div class="op-card">
+            <div class="op-text">
+                <div class="op-name">Kashmir Air Operations</div>
+                <div class="op-year">1947 – 1948</div>
+                <div class="op-desc">
+                    The Indian Air Force played a decisive role during the Kashmir conflict.
+                    Dakota aircraft airlifted troops and supplies to Srinagar.
+                    This was one of the earliest strategic airlift missions in Asia.
+                    It ensured the defense of the Kashmir valley.
+                    The operation highlighted the importance of air mobility.
+                </div>
+            </div>
+            <div class="op-image">
+                <img src="/static/images/air1.jpg" alt="IAF 1947 Operations">
+            </div>
+        </div>
+
+        <div class="op-card">
+            <div class="op-text">
+                <div class="op-name">Indo-China War Air Operations</div>
+                <div class="op-year">1962</div>
+                <div class="op-desc">
+                    During the 1962 conflict, the IAF focused on logistics and supply missions.
+                    Aircraft operated in high-altitude Himalayan regions.
+                    Limited offensive use was employed due to political decisions.
+                    The war exposed air defense limitations.
+                    It led to rapid modernization of the IAF.
+                </div>
+            </div>
+            <div class="op-image">
+                <img src="/static/images/air2.jpg" alt="Indo China War Air Force">
+            </div>
+        </div>
+
+        <div class="op-card">
+            <div class="op-text">
+                <div class="op-name">Indo-Pak War Air Operations</div>
+                <div class="op-year">1965</div>
+                <div class="op-desc">
+                    The 1965 war saw intense aerial combat between India and Pakistan.
+                    IAF conducted close air support and strategic bombing missions.
+                    Fighter aircraft protected ground forces.
+                    Several key enemy air bases were targeted.
+                    The conflict strengthened India’s air combat doctrine.
+                </div>
+            </div>
+            <div class="op-image">
+                <img src="/static/images/air3.jpg" alt="1965 Air War">
+            </div>
+        </div>
+
+        <div class="op-card">
+            <div class="op-text">
+                <div class="op-name">Indo-Pak War & Bangladesh Liberation</div>
+                <div class="op-year">1971</div>
+                <div class="op-desc">
+                    The IAF achieved complete air superiority in the eastern sector.
+                    Precision strikes neutralized enemy airfields.
+                    Airlift and close support missions accelerated ground advances.
+                    The war concluded with a decisive Indian victory.
+                    It remains one of the IAF’s finest campaigns.
+                </div>
+            </div>
+            <div class="op-image">
+                <img src="/static/images/air4.jpg" alt="1971 Air Force">
+            </div>
+        </div>
+
+        <div class="op-card">
+            <div class="op-text">
+                <div class="op-name">Kargil War – IAF Role (Operation Safed Sagar)</div>
+                <div class="op-year">1999</div>
+                <div class="op-desc">
+                    The IAF provided crucial air support during the Kargil conflict.
+                    High-altitude bombing missions were conducted.
+                    Precision strikes targeted enemy positions.
+                    Aircraft operated under extreme weather conditions.
+                    The operation demonstrated air–land coordination.
+                </div>
+            </div>
+            <div class="op-image">
+                <img src="/static/images/air5.jpg" alt="Safed Sagar">
+            </div>
+        </div>
+
+        <div class="op-card">
+            <div class="op-text">
+                <div class="op-name">Balakot Air Strike</div>
+                <div class="op-year">2019</div>
+                <div class="op-desc">
+                    The Balakot air strike targeted terrorist training camps.
+                    It was conducted deep inside enemy territory.
+                    Precision-guided munitions were employed.
+                    The strike showcased India’s long-range strike capability.
+                    It marked a significant shift in strategic posture.
+                </div>
+            </div>
+            <div class="op-image">
+                <img src="/static/images/air6.jpg" alt="Balakot Air Strike">
+            </div>
+        </div>
+
+    </div>
+
+    <a href="/home" class="back-btn">← Back to Home</a>
+</div>
+
+</body>
+</html>

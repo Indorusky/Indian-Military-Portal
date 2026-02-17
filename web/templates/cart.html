@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Cart</title>
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="/static/dashboard.css">
+</head>
+<body>
+
+<!-- BACKGROUND -->
+<div class="bg-home"></div>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="nav-left">
+        <span class="title">🛒 My Cart</span>
+    </div>
+
+    <a href="/store" class="logout">Store</a>
+    <a href="/home" class="logout">Home</a>
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+    <h1 class="welcome">Your Shopping Cart</h1>
+
+    {% if items %}
+        {% for product, qty, subtotal in items %}
+            <div class="card" style="margin-bottom:25px;">
+                <h3>{{ product.name }}</h3>
+
+                <p>Quantity: {{ qty }}</p>
+                <p>Price: ₹ {{ product.price }}</p>
+                <p><b>Subtotal:</b> ₹ {{ subtotal }}</p>
+
+                <a href="/remove-from-cart/{{ product.id }}"
+                   class="logout"
+                   style="color:#e74c3c;">
+                    ❌ Remove Item
+                </a>
+            </div>
+        {% endfor %}
+
+        <h2 style="margin-top:30px;">Total: ₹ {{ total }}</h2>
+
+        <div style="margin-top:30px;">
+            <a href="/store" class="logout">← Continue Shopping</a>
+            &nbsp;&nbsp;
+            <a href="/clear-cart" class="logout" style="color:#e67e22;">
+                🧹 Clear Cart
+            </a>
+        </div>
+
+    {% else %}
+        <p>Your cart is empty.</p>
+        <a href="/store" class="logout">Go to Store</a>
+    {% endif %}
+</div>
+
+</body>
+</html>

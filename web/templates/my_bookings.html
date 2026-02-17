@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Ticket Bookings</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="bg-blur"></div>
+
+<div class="center-wrapper">
+    <div class="login-card" style="width:480px;">
+        <h2>🎟️ My Bookings</h2>
+
+        {% if bookings %}
+            {% for b in bookings %}
+                <div style="
+                    background: rgba(255,255,255,0.08);
+                    padding: 14px;
+                    margin: 12px 0;
+                    border-radius: 10px;
+                    text-align: left;
+                ">
+                    <b>Event Date:</b> {{ b.event_date }}<br>
+
+                    <b>Event:</b> {{ b.event_type }}<br>
+                    <b>City:</b> {{ b.city }}<br>
+                    <b>Seats:</b> {{ b.seats }}<br>
+                    <small>Booked on {{ b.created_at }}</small>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>No bookings yet.</p>
+        {% endif %}
+
+        <div class="link">
+            <a href="/home">← Back to Home</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+/* ---------- GLOBAL ---------- */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: url("/static/images/su30.jpg") no-repeat center/cover;
+    height: 100vh;
+    overflow-y: auto;   /* ✅ ALLOW VERTICAL SCROLL */
+    overflow-x: hidden; /* ✅ PREVENT SIDE SCROLL */
+}
+
+/* ---------- BLURRED BACKGROUND ---------- */
+.bg-blur {
+    position: fixed;
+    inset: 0;
+    background: inherit;
+    filter: blur(14px);
+    transform: scale(1.12);
+    z-index: -1;
+}
+
+/* ---------- CENTER PAGE ---------- */
+.center-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* ---------- LOGIN CARD ---------- */
+.login-card {
+    width: 380px;
+    background: rgba(0, 0, 0, 0.82);
+    padding: 36px;
+    border-radius: 18px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.85);
+    backdrop-filter: blur(6px);
+}
+
+/* ---------- TITLE ---------- */
+.login-card h2 {
+    margin-bottom: 26px;
+    letter-spacing: 1px;
+    font-size: 24px;
+}
+
+/* ---------- FORM ---------- */
+.login-card form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 🔥 THIS CENTERS INPUTS */
+}
+
+/* ---------- INPUTS ---------- */
+.login-card input {
+    width: 100%;
+    max-width: 300px;     /* keeps symmetry */
+    box-sizing: border-box; /* 🔥 IMPORTANT FIX */
+    padding: 14px;
+    margin: 14px 0;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: #eef4ff;
+}
+
+/* ---------- BUTTON ---------- */
+.login-card button {
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    padding: 14px;
+    margin-top: 14px;
+    background: linear-gradient(135deg, #1abc9c, #16a085);
+    border: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-card button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(26, 188, 156, 0.6);
+}
+
+/* ---------- LINKS ---------- */
+.link {
+    margin-top: 20px;
+}
+
+.link a {
+    color: #1abc9c;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- ERROR ---------- */
+.error {
+    color: #ff5c5c;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+body{
+    background: url("/static/images/su30.jpg") no-repeat center/cover;
+}

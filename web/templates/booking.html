@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ event_name }}</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="bg-blur"></div>
+
+<div class="center-wrapper">
+    <div class="login-card">
+        <h2>{{ event_name }}</h2>
+
+        <form method="POST">
+
+            <!-- EMAIL (🔥 REQUIRED FOR OTP) -->
+            <input
+                type="email"
+                name="email"
+                placeholder="Gmail ID"
+                required
+            >
+
+            <!-- CITY -->
+            <input
+                type="text"
+                name="city"
+                placeholder="City"
+                required
+            >
+
+            <!-- SEATS -->
+            <input
+                type="number"
+                name="seats"
+                placeholder="Number of Seats"
+                min="1"
+                required
+            >
+
+            <!-- DATE -->
+            <input
+                type="date"
+                name="event_date"
+                required
+            >
+
+            <button type="submit">Book Ticket</button>
+        </form>
+
+        <div class="link">
+            <a href="/home">Back to Home</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

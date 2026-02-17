@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recruitment Registration</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="bg-blur"></div>
+
+<div class="center-wrapper">
+    <div class="login-card">
+        <h2>Recruitments Open</h2>
+
+        <form method="POST">
+            <input type="text" name="fullname" placeholder="Full Name" required>
+            <input type="date" name="dob" required>
+
+            <select name="gender" required style="width:100%;padding:14px;border-radius:10px;">
+                <option value="">Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+
+            <input type="text" name="state" placeholder="State" required>
+            <input type="text" name="district" placeholder="District" required>
+            <input type="text" name="place" placeholder="Place" required>
+
+            <input type="email" name="email" placeholder="Gmail ID" required>
+            <input type="text" name="phone" placeholder="Phone Number" required>
+
+            <input type="text" name="qualification" placeholder="Highest Qualification" required>
+
+            <button type="submit">Register Now</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

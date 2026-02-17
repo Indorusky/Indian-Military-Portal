@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@500&family=Playfair+Display:wght@500&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/static/dashboard.css">
+</head>
+<body>
+
+<!-- BACKGROUND -->
+<div class="bg-home"></div>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="nav-left">
+        <div class="hamburger" onclick="toggleSidebar()">☰</div>
+
+        <!-- FLAG -->
+        <img src="/static/images/india_flag.png" class="flag">
+
+        <!-- BRAND TEXT -->
+        <div class="brand-line">
+            <span class="title">Military Portal</span>
+            <span class="sep">|</span>
+            <span class="armed">Indian Armed Forces</span>
+            <span class="sep">|</span>
+            <span class="navy">Indian Navy</span>
+            <span class="sep">|</span>
+            <span class="air">Indian Air Force</span>
+        </div>
+    </div>
+
+    <a href="/logout" class="logout">Logout</a>
+</div>
+
+<!-- SIDEBAR OVERLAY -->
+<div class="sidebar-overlay" onclick="toggleSidebar()"></div>
+
+<!-- SIDEBAR -->
+<div class="sidebar" id="sidebar">
+    <h3>☰ Menu</h3>
+
+    <a href="/my-bookings" class="side-item" onclick="toggleSidebar()">🎟️ My Bookings</a>
+
+    <h3 style="margin-top:20px;">🎫 Book Tickets</h3>
+
+    <a href="/book/airshow" class="side-item air" onclick="toggleSidebar()">
+        ✈️ Air Shows
+        <span>Book tickets →</span>
+    </a>
+
+    <a href="/book/army-parade" class="side-item army" onclick="toggleSidebar()">
+        🪖 Army Parades
+        <span>Book tickets →</span>
+    </a>
+
+    <a href="/book/naval-show" class="side-item navy" onclick="toggleSidebar()">
+        ⚓ Naval Shows
+        <span>Book tickets →</span>
+    </a>
+
+    <h3 style="margin-top:20px;">🛍️ Store</h3>
+
+    <a href="/store" class="side-item" onclick="toggleSidebar()">🛍️ Store</a>
+    <a href="/cart" class="side-item" onclick="toggleSidebar()">🛒 Cart</a>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+    <h1 class="welcome">Welcome Sergeant</h1>
+
+    <div class="cards">
+        <div class="card army" onclick="location.href='/army'">Army Operations</div>
+        <div class="card navy" onclick="location.href='/navy'">Navy Operations</div>
+        <div class="card air" onclick="location.href='/airforce'">Air Force Operations</div>
+    </div>
+
+    <a href="/recruitment" class="recruit-link">
+        <div class="recruit-card">
+            <h2>📢 Recruitments Open</h2>
+            <p>Indian Armed Forces • Army • Navy • Air Force</p>
+            <span>Register Now →</span>
+        </div>
+    </a>
+</div>
+
+<!-- SCRIPT -->
+<script>
+function toggleSidebar() {
+    document.getElementById("sidebar").classList.toggle("active");
+    document.querySelector(".sidebar-overlay").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

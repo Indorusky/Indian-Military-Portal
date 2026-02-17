@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OTP Verification</title>
+    <link rel="stylesheet" href="/static/style.css">
+
+    <style>
+        /* OTP-specific polish */
+        .otp-title {
+            font-size: 22px;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .otp-sub {
+            font-size: 14px;
+            opacity: 0.85;
+            margin-bottom: 22px;
+        }
+
+        .otp-input {
+            letter-spacing: 8px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<!-- BLURRED BACKGROUND -->
+<div class="bg-blur"></div>
+
+<!-- CENTER CARD -->
+<div class="center-wrapper">
+    <div class="login-card">
+
+        <div class="otp-title">🔐 OTP Verification</div>
+        <div class="otp-sub">
+            Enter the 6-digit code sent to your email
+        </div>
+
+        <form method="POST">
+            <input
+                type="text"
+                name="otp"
+                class="otp-input"
+                placeholder="• • • • • •"
+                maxlength="6"
+                pattern="[0-9]{6}"
+                required
+            >
+
+            <button type="submit">Verify OTP</button>
+        </form>
+
+        <div class="link">
+            <a href="/home">Cancel & Go Back</a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
